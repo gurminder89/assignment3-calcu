@@ -8,6 +8,6 @@ public interface calcinterface {
 	
 	public int multiply (int a , int b);
 	
-	public int divide (int a , int b);
+	public double divide (double a , double b);
 	
 }

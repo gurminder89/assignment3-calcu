@@ -1,6 +1,5 @@
 package it.A3;
 
-
 import static org.mockito.Mockito.*;
 
 import junit.framework.TestCase;
@@ -8,7 +7,7 @@ import junit.framework.TestCase;
 public class calcuimplementationTest5 extends TestCase {
 	
 	calcuimplementation obj;
-	int a, b;
+	double a, b;
 
 	protected void setUp() throws Exception {
 		
@@ -16,25 +15,24 @@ public class calcuimplementationTest5 extends TestCase {
 		a = 3;
 		b = 5;
 		calcinterface mockObj = mock (calcinterface.class);
-		when (mockObj.divide(a, b )).thenReturn(a/b);
+		when (mockObj.divide(a,b )).thenReturn  (((double) a/ (double)b));
 		obj.setCalc(mockObj);
-	
 		
-	}
-	
-	public void testsubtract() {
-		assertEquals(1.5 , a/b);
-	}
-
-	protected void tearDown() throws Exception {
-		
-		obj = null;
-		a =0;
-		b = 0;
 		
 	}
 
-	
-	
+
+
+	public void testDivideTwoNums() {
+		assertEquals(0.6, a/b);
+	}
+		
+		protected void tearDown() throws Exception {
+			
+			obj = null;
+			a =0;
+			b = 0;
+		
+	}
 
 }

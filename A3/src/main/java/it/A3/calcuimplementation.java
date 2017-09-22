@@ -25,7 +25,7 @@ public class calcuimplementation {
 		return calc.multiply (a, b);
 	}
 	
-	public int divideTwoNums(int a , int b) {
+	public double divideTwoNums(int a , int b) {
 		return calc.divide(a, b);
 	}
 	
